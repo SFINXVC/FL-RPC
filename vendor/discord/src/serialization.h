@@ -13,9 +13,9 @@
 #endif                          // __MINGW32__
 
 // pro fix
-#include "../../../vendor/discord/thirdparty/rapidjson/include/rapidjson/document.h"
-#include "../../../vendor/discord/thirdparty/rapidjson/include/rapidjson/stringbuffer.h"
-#include "../../../vendor/discord/thirdparty/rapidjson/include/rapidjson/writer.h"
+#include <rapidjson/document.h>
+#include <rapidjson/stringbuffer.h>
+#include <rapidjson/writer.h>
 
 #ifndef __MINGW32__
 #pragma warning(pop)

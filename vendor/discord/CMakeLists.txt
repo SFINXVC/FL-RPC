@@ -34,6 +34,9 @@ find_file(RAPIDJSON NAMES rapidjson rapidjson PATHS ${CMAKE_CURRENT_SOURCE_DIR}/
 
 add_library(rapidjson STATIC IMPORTED ${RAPIDJSON})
 
+include_directories(DiscordRPC PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty)
+
+
 add_subdirectory(src)
 if (BUILD_EXAMPLES)
     add_subdirectory(examples/send-presence)
